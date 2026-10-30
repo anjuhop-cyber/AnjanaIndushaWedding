@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wedding Invitation | Indusha &amp; Anjana</title>
-  <meta name="description" content="You are invited to the wedding of Indusha &amp; Anjana — 03 December 2026.">
+  <title>Indusha &amp; Anjana | Wedding Invitation</title>
+  <meta name="description" content="A timeless wedding invitation for Indusha &amp; Anjana — 03 December 2026.">
   <meta name="theme-color" content="#16241e">
-  <meta property="og:title" content="Wedding Invitation | Indusha &amp; Anjana">
-  <meta property="og:description" content="Together with our families — December 03, 2026.">
+  <meta property="og:title" content="Indusha &amp; Anjana | Wedding Invitation">
+  <meta property="og:description" content="With full hearts, our forever begins. 03 December 2026.">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💍</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="page">
@@ -24,48 +24,17 @@
       <span class="sr-only">and</span>
       <span>Anjana</span>
     </h1>
-    <p class="date-line">December 03, 2026</p>
-
-    <div class="envelope-wrap">
-      <div id="envelope" class="envelope" aria-hidden="true">
-        <div class="flap"></div>
-        <div class="seal">♥</div>
+    <p class="tagline">With full hearts,<br>our forever begins.</p>
+    <hr class="rule">
+    <section class="note" aria-labelledby="awaits">
+      <h2 id="awaits">Your invitation awaits</h2>
+      <p>Choose an invitation below to discover the details of our celebration.</p>
+      <div class="btn-row" style="margin-top:1.75rem">
+        <a class="btn" href="wedding/">Wedding invitation</a>
+        <a class="btn ghost" href="homecoming/">Homecoming reception</a>
       </div>
-      <button id="open" class="btn" type="button" aria-expanded="false" aria-controls="card">Open invitation</button>
-
-      <article id="card" class="card" hidden>
-        <p class="small">Together with our families</p>
-        <p class="names" style="font-size:clamp(2.4rem,10vw,3.6rem)">
-          <span>Indusha</span>
-          <span class="amp" aria-hidden="true">&amp;</span>
-          <span class="sr-only">and</span>
-          <span>Anjana</span>
-        </p>
-        <p class="date-line">December 03, 2026</p>
-        <p class="more"><a class="btn" href="../homecoming/">View the homecoming invitation</a></p>
-      </article>
-    </div>
+    </section>
+    <p class="sign">With love, always.</p>
   </main>
-
-  <noscript><style>#card{display:block!important}#open,#envelope{display:none}</style></noscript>
-  <script>
-    (function () {
-      var btn = document.getElementById('open');
-      var env = document.getElementById('envelope');
-      var card = document.getElementById('card');
-      btn.addEventListener('click', function () {
-        btn.setAttribute('aria-expanded', 'true');
-        btn.disabled = true;
-        env.classList.add('open');
-        setTimeout(function () {
-          env.hidden = true;
-          btn.hidden = true;
-          card.hidden = false;
-          card.setAttribute('tabindex', '-1');
-          card.focus({ preventScroll: true });
-        }, 900);
-      });
-    })();
-  </script>
 </body>
 </html>

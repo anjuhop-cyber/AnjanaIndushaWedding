@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Homecoming Reception | Indusha &amp; Anjana</title>
-  <meta name="description" content="Homecoming reception of Indusha &amp; Anjana — Saturday, December 06, 2026, 6:30 PM onwards at Hotel Sanara Mandira, Kiribathgoda.">
+  <title>Wedding Invitation | Indusha &amp; Anjana</title>
+  <meta name="description" content="You are invited to the wedding of Indusha &amp; Anjana — 03 December 2026.">
   <meta name="theme-color" content="#16241e">
-  <meta property="og:title" content="Homecoming Reception | Indusha &amp; Anjana">
-  <meta property="og:description" content="Saturday, December 06, 2026 · 6:30 PM onwards · Hotel Sanara Mandira, Kiribathgoda.">
+  <meta property="og:title" content="Wedding Invitation | Indusha &amp; Anjana">
+  <meta property="og:description" content="Together with our families — December 03, 2026.">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💍</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,111 +17,54 @@
 </head>
 <body>
   <main class="page">
-    <p class="kicker">The homecoming reception of</p>
-    <h2 class="names">
+    <p class="kicker">A celebration of love</p>
+    <h1 class="names">
       <span>Indusha</span>
       <span class="amp" aria-hidden="true">&amp;</span>
       <span class="sr-only">and</span>
       <span>Anjana</span>
-    </h2>
+    </h1>
+    <p class="date-line">December 03, 2026</p>
 
-    <p class="event-line">Saturday, December 06, 2026</p>
-    <p class="event-line">Hotel Sanara Mandira (Ranasara Hall - Ground Floor)</p>
+    <div class="envelope-wrap">
+      <div id="envelope" class="envelope" aria-hidden="true">
+        <div class="flap"></div>
+        <div class="seal">♥</div>
+      </div>
+      <button id="open" class="btn" type="button" aria-expanded="false" aria-controls="card">Open invitation</button>
 
-    <p class="counting" id="counting-label">✦ Counting moments until celebration ✦</p>
-    <div class="countdown" id="countdown" role="timer" aria-live="off">
-      <div><b id="d">00</b><span>Days</span></div>
-      <div><b id="h">00</b><span>Hours</span></div>
-      <div><b id="m">00</b><span>Mins</span></div>
-      <div><b id="s">00</b><span>Secs</span></div>
+      <article id="card" class="card" hidden>
+        <p class="small">Together with our families</p>
+        <p class="names" style="font-size:clamp(2.4rem,10vw,3.6rem)">
+          <span>Indusha</span>
+          <span class="amp" aria-hidden="true">&amp;</span>
+          <span class="sr-only">and</span>
+          <span>Anjana</span>
+        </p>
+        <p class="date-line">December 03, 2026</p>
+        <p class="more"><a class="btn" href="../homecoming/">View the homecoming invitation</a></p>
+      </article>
     </div>
-    <p class="celebrated" id="celebrated" hidden>Thank you for celebrating with us.</p>
-
-    <div class="btn-row">
-      <a class="btn ghost" id="ics" href="#" download="indusha-anjana-homecoming.ics">Add to Calendar</a>
-      <a class="btn ghost" id="gcal" target="_blank" rel="noopener noreferrer"
-         href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Homecoming%20Reception%20%E2%80%93%20Indusha%20%26%20Anjana&dates=20261206T130000Z/20261206T170000Z&details=Homecoming%20reception%20of%20Indusha%20%26%20Anjana&location=Hotel%20Sanara%20Mandira%2C%20Makola%20Road%2C%20Kiribathgoda&ctz=Asia%2FColombo">Google Calendar</a>
-    </div>
-
-    <hr class="rule">
-
-    <section class="block hosts" aria-labelledby="joy">
-      <h3 id="joy">With Joyful Hearts</h3>
-      <p>Mr. C. Gnanarathnam</p>
-      <p class="together">together with</p>
-      <p>Mr. L. S. Gabriel</p>
-      <p class="body-copy" style="margin-top:1.5rem">Request the honour of your presence to celebrate the homecoming of their beloved children. Join us for an evening of love, laughter, and beautiful beginnings.</p>
-    </section>
-
-    <hr class="rule">
-
-    <section class="block" aria-labelledby="celebration">
-      <p class="kicker" style="margin-bottom:.5rem">The celebration</p>
-      <h3 id="celebration">Homecoming Reception</h3>
-      <dl class="details">
-        <div>
-          <dt>The date</dt>
-          <dd>Saturday, December 06, 2026</dd>
-        </div>
-        <div>
-          <dt>The time</dt>
-          <dd>6:30 PM onwards<small>Sri Lanka Standard Time</small></dd>
-        </div>
-        <div>
-          <dt>The venue</dt>
-          <dd>Hotel Sanara Mandira (Ranasara Hall - Ground Floor)<small>Makola Road, Kiribathgoda</small>
-            <a class="btn ghost" href="https://maps.app.goo.gl/tBtfs5ZNufkGfXm5A?g_st=iw" target="_blank" rel="noopener noreferrer">Get Directions</a>
-          </dd>
-        </div>
-      </dl>
-    </section>
-
-    <hr class="rule">
-    <p class="sign" style="margin-top:0">Indusha &amp; Anjana</p>
-    <p class="body-copy" style="margin-top:.5rem;font-style:italic">With love &amp; gratitude</p>
   </main>
 
+  <noscript><style>#card{display:block!important}#open,#envelope{display:none}</style></noscript>
   <script>
     (function () {
-      // 6:30 PM Sri Lanka Standard Time (UTC+05:30)
-      var target = new Date('2026-12-06T18:30:00+05:30').getTime();
-      var els = { d: document.getElementById('d'), h: document.getElementById('h'),
-                  m: document.getElementById('m'), s: document.getElementById('s') };
-      function pad(n) { return n < 10 ? '0' + n : String(n); }
-
-      function tick() {
-        var diff = target - Date.now();
-        if (diff <= 0) {
-          document.getElementById('countdown').hidden = true;
-          document.getElementById('counting-label').hidden = true;
-          document.getElementById('celebrated').hidden = false;
-          return false;
-        }
-        var sec = Math.floor(diff / 1000);
-        els.d.textContent = pad(Math.floor(sec / 86400));
-        els.h.textContent = pad(Math.floor(sec % 86400 / 3600));
-        els.m.textContent = pad(Math.floor(sec % 3600 / 60));
-        els.s.textContent = pad(sec % 60);
-        return true;
-      }
-      if (tick()) {
-        var timer = setInterval(function () { if (!tick()) clearInterval(timer); }, 1000);
-      }
-
-      // .ics download (6:30 PM – 10:30 PM Sri Lanka time = 13:00–17:00 UTC)
-      var ics = [
-        'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Indusha and Anjana//Homecoming//EN',
-        'BEGIN:VEVENT',
-        'UID:homecoming-20261206@anjanaindusha',
-        'DTSTAMP:20261001T000000Z',
-        'DTSTART:20261206T130000Z',
-        'DTEND:20261206T170000Z',
-        'SUMMARY:Homecoming Reception - Indusha & Anjana',
-        'LOCATION:Hotel Sanara Mandira (Ranasara Hall - Ground Floor)\\, Makola Road\\, Kiribathgoda',
-        'DESCRIPTION:Join us for an evening of love\\, laughter\\, and beautiful beginnings.',
-        'END:VEVENT', 'END:VCALENDAR'
-      ].join('\r\n');
-      document.getElementById('ics').href = 'data:text/calendar;charset=utf-8,' + encodeURIComponent(ics);
+      var btn = document.getElementById('open');
+      var env = document.getElementById('envelope');
+      var card = document.getElementById('card');
+      btn.addEventListener('click', function () {
+        btn.setAttribute('aria-expanded', 'true');
+        btn.disabled = true;
+        env.classList.add('open');
+        setTimeout(function () {
+          env.hidden = true;
+          btn.hidden = true;
+          card.hidden = false;
+          card.setAttribute('tabindex', '-1');
+          card.focus({ preventScroll: true });
+        }, 900);
+      });
     })();
   </script>
 </body>
