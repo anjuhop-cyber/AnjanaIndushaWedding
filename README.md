@@ -1,21 +1,17 @@
 # Indusha & Anjana — Wedding Invitation
 
-Static site, ready for GitHub Pages. No build step.
+Static site for GitHub Pages. No build step.
+
+## Pages
+- `/` — landing page
+- `/wedding/` — wedding invitation (envelope opens to reveal the card)
+- `/homecoming/` — homecoming reception: countdown, calendar buttons, venue and directions
 
 ## Deploy on GitHub Pages
-1. Create a new repository on GitHub (e.g. `anjanaindusha`).
-2. Upload the contents of this folder (or run the git commands below).
-3. In the repo go to **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/ (root)`, then **Save**.
-5. After a minute the site is live at `https://<your-username>.github.io/<repo-name>/`.
+1. Create a GitHub repository and push this folder's contents to `main`.
+2. **Settings → Pages → Deploy from a branch → `main` / `(root)` → Save.**
+3. Live at `https://<username>.github.io/<repo>/` (or `https://<username>.github.io/` if the repo is named `<username>.github.io`).
 
-```bash
-git init
-git add .
-git commit -m "Wedding invitation site"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<repo-name>.git
-git push -u origin main
-```
-
-Tip: naming the repo `<your-username>.github.io` publishes it at `https://<your-username>.github.io/`.
+## Editing
+- Colors and fonts: `style.css` (`:root` variables at the top).
+- Event date/time for the countdown and calendar files: the `<script>` at the bottom of `homecoming/index.html`.
