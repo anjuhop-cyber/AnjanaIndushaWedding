@@ -1,17 +1,14 @@
 # Indusha & Anjana — Wedding Invitation
 
-Static site for GitHub Pages. No build step.
+Static site for GitHub Pages. Every page is a single self-contained file (styles are built in), so each one looks right wherever it is hosted.
 
-## Pages
-- `/` — landing page
-- `/wedding/` — wedding invitation (envelope opens to reveal the card)
-- `/homecoming/` — homecoming reception: countdown, calendar buttons, venue and directions
+## Files (all in the top level of the repo)
+- `index.html` — landing page with buttons
+- `wedding.html` — wedding invitation (envelope opens to reveal the card)
+- `homecoming.html` — homecoming reception: countdown, calendar buttons, venue and directions
+- `404.html`, `.nojekyll`
 
-## Deploy on GitHub Pages
-1. Create a GitHub repository and push this folder's contents to `main`.
-2. **Settings → Pages → Deploy from a branch → `main` / `(root)` → Save.**
-3. Live at `https://<username>.github.io/<repo>/` (or `https://<username>.github.io/` if the repo is named `<username>.github.io`).
+## Optional: your own envelope pictures
+Put `envelope-closed.webp` and `envelope-open.webp` in the same place as `wedding.html`. The wedding page uses them automatically; without them it shows a drawn envelope.
 
-## Editing
-- Colors and fonts: `style.css` (`:root` variables at the top).
-- Event date/time for the countdown and calendar files: the `<script>` at the bottom of `homecoming/index.html`.
+Links: `https://<username>.github.io/<repo>/wedding.html` and `.../homecoming.html`

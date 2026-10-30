@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homecoming Reception | Indusha &amp; Anjana</title>
+  <meta name="description" content="Homecoming reception of Indusha &amp; Anjana — Saturday, December 06, 2026, 6:30 PM onwards at Hotel Sanara Mandira, Kiribathgoda.">
+  <meta name="theme-color" content="#16241e">
+  <meta property="og:title" content="Homecoming Reception | Indusha &amp; Anjana">
+  <meta property="og:description" content="Saturday, December 06, 2026 · 6:30 PM onwards · Hotel Sanara Mandira, Kiribathgoda.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💍</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --bg: #16241e;
+  --bg-deep: #0f1a15;
+  --ink: #ece2cd;
+  --muted: #b5ae9b;
+  --accent: #c8a56a;
+  --paper: #f3ead8;
+  --paper-ink: #2a2a24;
+  --serif: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  --sans: "Jost", "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { min-height: 100%; background: var(--bg-deep); }
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(ellipse at 50% 20%, var(--bg) 0%, var(--bg-deep) 100%);
+  background-attachment: fixed;
+  color: var(--ink);
+  font-family: var(--serif);
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  place-items: center;
+  padding: 2rem 1.25rem;
+}
+
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+
+.page {
+  width: 100%;
+  max-width: 36rem;
+  text-align: center;
+  border: 1px solid rgba(200, 165, 106, 0.45);
+  outline: 1px solid rgba(200, 165, 106, 0.18);
+  outline-offset: 8px;
+  padding: clamp(2.5rem, 8vw, 4.5rem) clamp(1.5rem, 6vw, 3.5rem);
+  animation: settle 1.2s ease-out both;
+}
+
+.kicker {
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 0.28em;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+
+.names {
+  font-weight: 300;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1.names { font-size: clamp(3.25rem, 14vw, 5.5rem); }
+h2.names { font-size: clamp(2.6rem, 11vw, 4rem); margin: 0.9rem 0 1.5rem; }
+.names .amp {
+  font-style: italic;
+  font-size: 0.55em;
+  color: var(--accent);
+  margin: 0.15em 0;
+}
+
+.tagline, .date-line {
+  margin-top: 1.75rem;
+  font-style: italic;
+  font-size: 1.35rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.rule {
+  width: 3.5rem;
+  border: 0;
+  border-top: 1px solid var(--accent);
+  margin: 2.5rem auto;
+}
+
+.note h2, .block h3 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 0.9rem;
+}
+.note p, .body-copy {
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--muted);
+  max-width: 26rem;
+  margin: 0 auto;
+}
+.sign {
+  margin-top: 2.25rem;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--accent);
+}
+
+/* ---------- buttons ---------- */
+.btn {
+  display: inline-block;
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  color: var(--bg-deep);
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.8rem 1.6rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.btn:hover { background: transparent; color: var(--accent); }
+.btn.ghost { background: transparent; color: var(--accent); }
+.btn.ghost:hover { background: var(--accent); color: var(--bg-deep); }
+.btn-row { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+
+/* ---------- homecoming ---------- */
+.event-line { font-size: 1.3rem; line-height: 1.5; }
+.event-line + .event-line { color: var(--muted); font-style: italic; font-size: 1.15rem; }
+
+.counting {
+  margin-top: 2.25rem;
+  font-style: italic;
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin: 1.1rem auto 2rem;
+  max-width: 24rem;
+}
+.countdown div {
+  border: 1px solid rgba(200, 165, 106, 0.35);
+  padding: 0.9rem 0.25rem 0.7rem;
+}
+.countdown b {
+  display: block;
+  font-weight: 300;
+  font-size: clamp(1.8rem, 8vw, 2.4rem);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.countdown span {
+  display: block;
+  margin-top: 0.4rem;
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+.celebrated { font-size: 1.3rem; font-style: italic; color: var(--accent); margin: 1.75rem 0 2rem; }
+
+.hosts p { font-size: 1.5rem; line-height: 1.35; }
+.hosts .together { font-style: italic; font-size: 1.1rem; color: var(--accent); margin: 0.5rem 0; }
+
+.details { display: grid; gap: 1.75rem; margin-top: 1.5rem; }
+.details dt { font-style: italic; color: var(--accent); font-size: 1.05rem; margin-bottom: 0.25rem; }
+.details dd { font-size: 1.35rem; line-height: 1.4; }
+.details dd small { display: block; font-size: 1.05rem; color: var(--muted); }
+.details .btn { margin-top: 0.9rem; }
+
+/* ---------- wedding envelope ---------- */
+.envelope-wrap { margin: 2.5rem auto 0; min-height: 15rem; }
+.envelope {
+  position: relative;
+  width: min(18rem, 100%);
+  height: 12rem;
+  margin: 0 auto 2rem;
+  background: #1f3329;
+  border: 1px solid var(--accent);
+  perspective: 700px;
+}
+.envelope::before {                 /* envelope sides + bottom fold */
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top right, transparent 49.6%, rgba(200,165,106,.45) 50%, transparent 50.4%) left / 50% 100% no-repeat,
+    linear-gradient(to top left,  transparent 49.6%, rgba(200,165,106,.45) 50%, transparent 50.4%) right / 50% 100% no-repeat;
+}
+.flap {
+  position: absolute; top: -1px; left: -1px; right: -1px;
+  height: 6.6rem;
+  background: #2a4336;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform-origin: top;
+  transition: transform 0.9s ease;
+  border-top: 1px solid var(--accent);
+}
+.seal {
+  position: absolute; left: 50%; top: 5.3rem; translate: -50% 0;
+  width: 2.2rem; height: 2.2rem; border-radius: 50%;
+  background: var(--accent); color: var(--bg-deep);
+  display: grid; place-items: center; font-size: 1.1rem;
+  transition: opacity 0.4s;
+}
+.envelope.open .flap { transform: rotateX(180deg); }
+.envelope.open .seal { opacity: 0; }
+
+.card {
+  background: var(--paper);
+  color: var(--paper-ink);
+  padding: 2.5rem 1.5rem;
+  border: 1px solid var(--accent);
+  outline: 1px solid rgba(200,165,106,.6);
+  outline-offset: -8px;
+  animation: settle 1s ease-out both;
+}
+.card .small { font-style: italic; font-size: 1.2rem; color: #6b6148; }
+.card .names { margin: 1.2rem 0 1.2rem; }
+.card .names .amp { color: #9a7a3e; }
+.card .date-line { color: #4a4636; margin-top: 0; font-size: 1.5rem; }
+.card .more { margin-top: 1.75rem; }
+.card .btn { color: var(--paper-ink); border-color: #9a7a3e; background: transparent; }
+.card .btn:hover { background: #9a7a3e; color: var(--paper); }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+@keyframes settle {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page, .card { animation: none; }
+  .flap { transition: none; }
+}
+
+/* optional photo envelope (envelope-closed.webp / envelope-open.webp) */
+.env-photo {
+  display: block;
+  width: min(24rem, 100%);
+  height: auto;
+  margin: 0 auto 2rem;
+  animation: settle 1s ease-out both;
+}
+.env-photo[hidden], .envelope[hidden] { display: none; }
+</style>
+</head>
+<body>
+  <main class="page">
+    <p class="kicker">The homecoming reception of</p>
+    <h2 class="names">
+      <span>Indusha</span>
+      <span class="amp" aria-hidden="true">&amp;</span>
+      <span class="sr-only">and</span>
+      <span>Anjana</span>
+    </h2>
+
+    <p class="event-line">Saturday, December 06, 2026</p>
+    <p class="event-line">Hotel Sanara Mandira (Ranasara Hall - Ground Floor)</p>
+
+    <p class="counting" id="counting-label">✦ Counting moments until celebration ✦</p>
+    <div class="countdown" id="countdown" role="timer" aria-live="off">
+      <div><b id="d">00</b><span>Days</span></div>
+      <div><b id="h">00</b><span>Hours</span></div>
+      <div><b id="m">00</b><span>Mins</span></div>
+      <div><b id="s">00</b><span>Secs</span></div>
+    </div>
+    <p class="celebrated" id="celebrated" hidden>Thank you for celebrating with us.</p>
+
+    <div class="btn-row">
+      <a class="btn ghost" id="ics" href="#" download="indusha-anjana-homecoming.ics">Add to Calendar</a>
+      <a class="btn ghost" id="gcal" target="_blank" rel="noopener noreferrer"
+         href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Homecoming%20Reception%20%E2%80%93%20Indusha%20%26%20Anjana&dates=20261206T130000Z/20261206T170000Z&details=Homecoming%20reception%20of%20Indusha%20%26%20Anjana&location=Hotel%20Sanara%20Mandira%2C%20Makola%20Road%2C%20Kiribathgoda&ctz=Asia%2FColombo">Google Calendar</a>
+    </div>
+
+    <hr class="rule">
+
+    <section class="block hosts" aria-labelledby="joy">
+      <h3 id="joy">With Joyful Hearts</h3>
+      <p>Mr. C. Gnanarathnam</p>
+      <p class="together">together with</p>
+      <p>Mr. L. S. Gabriel</p>
+      <p class="body-copy" style="margin-top:1.5rem">Request the honour of your presence to celebrate the homecoming of their beloved children. Join us for an evening of love, laughter, and beautiful beginnings.</p>
+    </section>
+
+    <hr class="rule">
+
+    <section class="block" aria-labelledby="celebration">
+      <p class="kicker" style="margin-bottom:.5rem">The celebration</p>
+      <h3 id="celebration">Homecoming Reception</h3>
+      <dl class="details">
+        <div>
+          <dt>The date</dt>
+          <dd>Saturday, December 06, 2026</dd>
+        </div>
+        <div>
+          <dt>The time</dt>
+          <dd>6:30 PM onwards<small>Sri Lanka Standard Time</small></dd>
+        </div>
+        <div>
+          <dt>The venue</dt>
+          <dd>Hotel Sanara Mandira (Ranasara Hall - Ground Floor)<small>Makola Road, Kiribathgoda</small>
+            <a class="btn ghost" href="https://maps.app.goo.gl/tBtfs5ZNufkGfXm5A?g_st=iw" target="_blank" rel="noopener noreferrer">Get Directions</a>
+          </dd>
+        </div>
+      </dl>
+    </section>
+
+    <hr class="rule">
+    <p class="sign" style="margin-top:0">Indusha &amp; Anjana</p>
+    <p class="body-copy" style="margin-top:.5rem;font-style:italic">With love &amp; gratitude</p>
+  </main>
+
+  <script>
+    (function () {
+      // 6:30 PM Sri Lanka Standard Time (UTC+05:30)
+      var target = new Date('2026-12-06T18:30:00+05:30').getTime();
+      var els = { d: document.getElementById('d'), h: document.getElementById('h'),
+                  m: document.getElementById('m'), s: document.getElementById('s') };
+      function pad(n) { return n < 10 ? '0' + n : String(n); }
+
+      function tick() {
+        var diff = target - Date.now();
+        if (diff <= 0) {
+          document.getElementById('countdown').hidden = true;
+          document.getElementById('counting-label').hidden = true;
+          document.getElementById('celebrated').hidden = false;
+          return false;
+        }
+        var sec = Math.floor(diff / 1000);
+        els.d.textContent = pad(Math.floor(sec / 86400));
+        els.h.textContent = pad(Math.floor(sec % 86400 / 3600));
+        els.m.textContent = pad(Math.floor(sec % 3600 / 60));
+        els.s.textContent = pad(sec % 60);
+        return true;
+      }
+      if (tick()) {
+        var timer = setInterval(function () { if (!tick()) clearInterval(timer); }, 1000);
+      }
+
+      // .ics download (6:30 PM – 10:30 PM Sri Lanka time = 13:00–17:00 UTC)
+      var ics = [
+        'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Indusha and Anjana//Homecoming//EN',
+        'BEGIN:VEVENT',
+        'UID:homecoming-20261206@anjanaindusha',
+        'DTSTAMP:20261001T000000Z',
+        'DTSTART:20261206T130000Z',
+        'DTEND:20261206T170000Z',
+        'SUMMARY:Homecoming Reception - Indusha & Anjana',
+        'LOCATION:Hotel Sanara Mandira (Ranasara Hall - Ground Floor)\\, Makola Road\\, Kiribathgoda',
+        'DESCRIPTION:Join us for an evening of love\\, laughter\\, and beautiful beginnings.',
+        'END:VEVENT', 'END:VCALENDAR'
+      ].join('\r\n');
+      document.getElementById('ics').href = 'data:text/calendar;charset=utf-8,' + encodeURIComponent(ics);
+    })();
+  </script>
+</body>
+</html>
